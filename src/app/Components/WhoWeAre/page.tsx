@@ -1,9 +1,27 @@
-import { Poppins } from "next/font/google";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+"use client";
+import Carousel from "../Carousel/Carousel";
+import Image from "next/image";
 
 export function WhoWeAre() {
+  const images = [
+    "http://localhost:3000/background.png",
+    "http://localhost:3000/background.png",
+    "http://localhost:3000/background.png",
+    "http://localhost:3000/background.png",
+    "http://localhost:3000/background.png",
+    "http://localhost:3000/background.png",
+  ];
+
   return (
-    <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16">
+    <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16 relative">
+      <img
+        src={"http://localhost:3000/elipse_1.svg"}
+        className="absolute left-[-10%] w-20 select-none"
+      />
+      <img
+        src={"http://localhost:3000/elipse_2.svg"}
+        className="absolute left-[-7.5%] w-12 top-[30%] select-none"
+      />
       <h1
         id="title"
         className="mx-auto w-full text-center text-title text-5xl "
@@ -49,7 +67,35 @@ export function WhoWeAre() {
             consectetur adipisicing met consectetur adipisicing elit.
           </p>
         </div>
+        <img
+          src={"http://localhost:3000/elipse_2.svg"}
+          className="absolute left-[100%] w-12 top-[97%] select-none"
+        />
       </div>
+      <Carousel loop={true} align={"end"}>
+        {images.map((src, i) => {
+          return (
+            // 👇 style each individual slide.
+            // relative - needed since we use the fill prop from next/image component
+            // h-64 - arbitrary height
+            // flex[0_0_100%]
+            //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
+            //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
+            <div
+              className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
+              key={i}
+            >
+              {/* use object-cover + fill since we don't know the height and width of the parent */}
+              <Image
+                src={src}
+                fill
+                className="object-contain px-4 "
+                alt="alt"
+              />
+            </div>
+          );
+        })}
+      </Carousel>
     </div>
   );
 }

@@ -14,11 +14,12 @@ export default function Home() {
         <img
           src="http://localhost:3000/background.png"
           alt=""
-          className="h-screen w-screen "
+          className="h-screen w-screen"
         />
       </section>
       <Spacer />
       <WhoWeAre />
+      <Spacer />
     </main>
   );
 }
