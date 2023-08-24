@@ -3,7 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["placehold.co", "cbissn.ibict.br", "localhost"],
+    domains: ["localhost"],
+  },
+  i18n: {
+    locales: ["pt-BR", "en-US", "es-ES"],
+    defaultLocale: "pt-BR",
   },
 };
 module.exports = nextConfig;

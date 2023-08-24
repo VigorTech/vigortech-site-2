@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Lato, Poppins } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
 
 const lato = Lato({ subsets: ["latin"], weight: ["900"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
@@ -17,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={lato.className}>{children}</body>
+      <body className={lato.className}>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }

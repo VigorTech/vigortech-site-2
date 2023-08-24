@@ -1,6 +1,10 @@
-import { Header } from "./Components/Header/page";
-import { Spacer } from "./Components/Spacer/page";
-import { WhoWeAre } from "./Components/WhoWeAre/page";
+import { Header } from ".././Components/Header/page";
+import { Spacer } from ".././Components/Spacer/page";
+import { WhoWeAre } from ".././Components/WhoWeAre/page";
+
+import { redirect } from "next/navigation";
+
+import { useTranslations } from "next-intl";
 
 export default function Home() {
   return (

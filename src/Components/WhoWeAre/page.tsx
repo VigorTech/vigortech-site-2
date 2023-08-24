@@ -16,11 +16,11 @@ export function WhoWeAre() {
     <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16 relative">
       <img
         src={"http://localhost:3000/elipse_1.svg"}
-        className="absolute left-[-10%] w-20 select-none"
+        className="absolute left-[-10%] w-20 select-none max-md:w-14"
       />
       <img
         src={"http://localhost:3000/elipse_2.svg"}
-        className="absolute left-[-7.5%] w-12 top-[30%] select-none"
+        className="absolute left-[-7.5%] w-12 top-[30%] select-none max-md:hidden"
       />
       <h1
         id="title"
@@ -69,7 +69,7 @@ export function WhoWeAre() {
         </div>
         <img
           src={"http://localhost:3000/elipse_2.svg"}
-          className="absolute left-[100%] w-12 top-[97%] select-none"
+          className="absolute left-[100%] w-12 top-[97%] select-none max-md:w-8"
         />
       </div>
       <Carousel loop={true} align={"end"}>
