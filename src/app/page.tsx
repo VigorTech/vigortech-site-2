@@ -6,7 +6,7 @@ import { WhoWeAre } from ".././Components/WhoWeAre/page";
 import { useState } from "react";
 
 export default function Home() {
-  const [language, setLanguage] = useState("pt");
+  const [language, setLanguage] = useState("PT");
   return (
     <main className="">
       <section className="" id="home">

@@ -5,6 +5,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "@nextui-org/react";
+import { SlOptionsVertical } from "react-icons/sl";
 
 import { useState, useMemo } from "react";
 import Lang from "../../locales";
@@ -55,9 +56,10 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
         ))}
         <Dropdown>
           <DropdownTrigger>
-            <a className="text-l  text-white cursor-pointer hover:text-emerald-500">
+            <a className="text-l relative text-white cursor-pointer hover:text-emerald-500">
               {selectedValue}
             </a>
+
             {/* <a href="">{locale}</a> */}
           </DropdownTrigger>
           <DropdownMenu
@@ -68,11 +70,25 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
             selectedKeys={selectedKeys}
             onSelectionChange={handleLanguageChange}
           >
-            <DropdownItem key="pt">PT</DropdownItem>
-            <DropdownItem key="en">EN</DropdownItem>
-            <DropdownItem key="es">ES</DropdownItem>
+            <DropdownItem key="PT">PT</DropdownItem>
+            <DropdownItem key="EN">EN</DropdownItem>
+            <DropdownItem key="ES">ES</DropdownItem>
           </DropdownMenu>
         </Dropdown>
+
+        {selectedValue.includes("PT") && (
+          <img src="http://localhost:3000/brasil.png" alt="" className="w-10" />
+        )}
+        {selectedValue.includes("EN") && (
+          <img
+            src="http://localhost:3000/estados-unidos.png"
+            alt=""
+            className="w-8"
+          />
+        )}
+        {selectedValue.includes("ES") && (
+          <img src="http://localhost:3000/espanha.png" alt="" className="w-8" />
+        )}
       </div>
     </nav>
   );
