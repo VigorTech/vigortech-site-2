@@ -1,8 +1,13 @@
 "use client";
+import Lang from "@/locales";
 import Carousel from "../Carousel/Carousel";
 import Image from "next/image";
 
-export function WhoWeAre() {
+interface WhoWeAreProps {
+  language: string;
+}
+
+export function WhoWeAre({ language }: WhoWeAreProps) {
   const images = [
     "http://localhost:3000/background.png",
     "http://localhost:3000/background.png",
@@ -26,7 +31,7 @@ export function WhoWeAre() {
         id="title"
         className="mx-auto w-full text-center text-title text-5xl "
       >
-        QUEM SOMOS
+        <Lang id="whoweare.title" language={language}></Lang>
       </h1>
       <div
         id="texts-container"

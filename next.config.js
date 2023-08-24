@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -6,8 +7,8 @@ const nextConfig = {
     domains: ["localhost"],
   },
   i18n: {
-    locales: ["pt-BR", "en-US", "es-ES"],
-    defaultLocale: "pt-BR",
+    locales: ["br", "es"],
+    defaultLocale: "br",
   },
 };
 module.exports = nextConfig;
