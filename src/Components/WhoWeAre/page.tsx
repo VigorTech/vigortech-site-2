@@ -38,11 +38,10 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
         className="justify-center flex max-xl:flex-col items-center text-text mt-11 space-x-10 py-8 max-xl:space-x-0"
       >
         <div id="text-section-1" className="text-text w-3/4 max-xl:w-full">
-          <h2 className="text-title text-5xl">
-            Somos uma casa de software focada em suprir as necessidades do
-            mercado com as tecnologias mais atuais.
+          <h2 className="text-title text-[2.1rem]">
+            <Lang id="whoweare.subtitle" language={language}></Lang>
           </h2>
-          <p className="tex-text text-xl mt-4">
+          <p className="text-text text-xl mt-4 leading-8">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
             exercitationem impedit expedita cum, atque inventore, assumenda,
             eaque mmodi officiis quod amet dolorem fugit. Delectus, ullam
@@ -52,24 +51,22 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
         </div>
         <div
           id="text-section-2"
-          className="w-4/5 text-text text-xl max-xl:mt-5 max-xl:w-full"
+          className="w-4/5  text-text text-xl max-xl:mt-5 max-xl:w-full"
         >
-          <p>
+          <p className="text-xl leading-8 text-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
             quibusdam voluptatum! Cumque expedita temporibus maxime possimus
             magni dolores laudantium repudiandae deserunt inventore quis
             laboriosam consectetur deleniti, officia o magni dolores laudantium
             repudiandae deserunt inventore.
           </p>
-          <p className="mt-4">
+          <p className="mt-4 text-xl leading-8 text-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
             exercitationem impedit expedita cum, atque inventore, assumenda,
             eaque mmodi officiis quod amet dolorem fugit. Delectus, ullam
             facilis quod similique qui molestias Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Incidunt, quisquam Lorem ipsum dolor
-            exercitationem impedit expedita cum, atque inventore, assumenda,
-            eaque mmodi officiis quod amuisquam Lorem ipsum dolor sit amet
-            consectetur adipisicing met consectetur adipisicing elit.
+            exercitationem impedit expedita cum
           </p>
         </div>
         <img
@@ -91,12 +88,7 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
               key={i}
             >
               {/* use object-cover + fill since we don't know the height and width of the parent */}
-              <Image
-                src={src}
-                fill
-                className="object-contain px-4 "
-                alt="alt"
-              />
+              <Image src={src} fill className="object-contain px-4" alt="alt" />
             </div>
           );
         })}

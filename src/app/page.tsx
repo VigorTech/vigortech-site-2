@@ -1,4 +1,5 @@
 "use client";
+import { Posts } from "../Components/Posts/page";
 import { Header } from ".././Components/Header/page";
 import { Spacer } from ".././Components/Spacer/page";
 import { WhoWeAre } from ".././Components/WhoWeAre/page";
@@ -24,6 +25,7 @@ export default function Home() {
       <Spacer />
       <WhoWeAre language={language} />
       <Spacer />
+      <Posts />
     </main>
   );
 }
