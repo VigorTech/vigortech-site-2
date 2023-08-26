@@ -1,4 +1,5 @@
 import { Header } from "./Components/Header/page";
+import { Services } from "./Components/Services/page";
 import { Spacer } from "./Components/Spacer/page";
 import { WhoWeAre } from "./Components/WhoWeAre/page";
 
@@ -19,6 +20,8 @@ export default function Home() {
       </section>
       <Spacer />
       <WhoWeAre />
+      <Spacer />
+      <Services />
     </main>
   );
 }

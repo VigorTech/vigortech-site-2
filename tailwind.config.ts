@@ -20,6 +20,7 @@ module.exports = {
       textColor: {
         title: "#1A2E35",
         text: "#333333",
+        cardTitle: "#04D6B2"
       },
     },
   },
