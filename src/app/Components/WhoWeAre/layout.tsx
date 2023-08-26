@@ -1,8 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Lato, Poppins } from "next/font/google";
 
-const lato = Lato({ subsets: ["latin"], weight: ["700"] });
+const lato = Lato({ subsets: ["latin"], weight: ["900"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={lato.className}>{children}</body>
     </html>
   );
