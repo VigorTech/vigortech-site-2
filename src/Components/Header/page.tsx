@@ -37,7 +37,6 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
         className="w-96 max-xl:w-52"
       />
       <div className="flex items-center mt-8 space-x-8 max-xl:hidden">
-        <h1></h1>
         {[
           ["contact", "/home"],
           ["whoweare", "/quemsomos"],
@@ -49,7 +48,7 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
           <a
             href={url}
             key={url}
-            className="text-l  text-white cursor-pointer hover:text-emerald-500"
+            className="text-lg text-lato text-white cursor-pointer hover:text-emerald-500"
           >
             <Lang id={`header.${title}`} language={language}></Lang>
           </a>

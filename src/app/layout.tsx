@@ -4,7 +4,7 @@ import { Lato, Poppins } from "next/font/google";
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["400"],
   variable: "--font-lato",
 });
 const poppinsBold = Poppins({

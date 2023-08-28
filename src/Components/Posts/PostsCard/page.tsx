@@ -1,6 +1,11 @@
-export function PostCard() {
+type PostCardProps = {
+  title: string;
+  subtitle: string;
+};
+
+export function PostCard({ title, subtitle }: PostCardProps) {
   return (
-    <div id="containers" className="">
+    <div id="containers" className="cursor-pointer">
       <img
         src="http://localhost:3000/background.png"
         alt=""
@@ -10,10 +15,10 @@ export function PostCard() {
         id="categoy"
         className="text-[#7BB4D3] letter tracking-[3.5px] pt-6 text-md text-poppins-bold "
       >
-        CATEGORY
+        {title}
       </h1>
       <h1 id="title" className="py-4 text-2xl text-poppins-bold ">
-        The Guide To Living Creatively
+        {subtitle}
       </h1>
     </div>
   );

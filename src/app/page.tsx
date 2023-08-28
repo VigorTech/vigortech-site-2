@@ -1,8 +1,9 @@
 "use client";
-import { Posts } from "../Components/Posts/page";
-import { Header } from ".././Components/Header/page";
-import { Spacer } from ".././Components/Spacer/page";
-import { WhoWeAre } from ".././Components/WhoWeAre/page";
+import { Posts } from "@/Components/Posts/page";
+import { Header } from "@/Components/Header/page";
+import { Spacer } from "@/Components/Spacer/page";
+import { WhoWeAre } from "@/Components/WhoWeAre/page";
+import { Footer } from "@/Components/Footer/page";
 
 import { useState } from "react";
 
@@ -26,6 +27,7 @@ export default function Home() {
       <WhoWeAre language={language} />
       <Spacer />
       <Posts />
+      <Footer language={language} />
     </main>
   );
 }
