@@ -28,6 +28,9 @@ h3 {
 .text-lato {
   font-family: var(--font-lato);
 }
+.text-lato-bold {
+  font-family: var(--font-lato-bold);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

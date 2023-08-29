@@ -7,6 +7,11 @@ const lato = Lato({
   weight: ["400"],
   variable: "--font-lato",
 });
+const latoBold = Lato({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-lato-bold",
+});
 const poppinsBold = Poppins({
   subsets: ["latin"],
   weight: ["600"],
@@ -31,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.variable} ${lato.variable} ${poppinsBold.variable}`}
+        className={`${poppins.variable} ${lato.variable} ${poppinsBold.variable} ${latoBold.variable}`}
       >
         {children}
       </body>
