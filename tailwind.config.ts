@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bgHome: "url(http://localhost:3000/background.png)",
+        bgContact: "url(http://localhost:3000/fundo-contato.png)",
       },
       dropShadow: {
         "3xl": "0 50px 70px rgba(0, 0, 0, 0.25)",

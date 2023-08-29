@@ -10,8 +10,13 @@ export function Footer({ language }: FooterProps) {
     <footer className="w-full flex">
       <div
         id="logo-container"
-        className="bg-[#1A2E35] w-1/3 h-52 flex justify-center py-7 max-xl:hidden"
+        className="bg-[#1A2E35] w-1/3 h-52 flex justify-center py-7 max-xl:hidden relative"
       >
+        <img
+          src="http://localhost:3000/elipse_3.svg"
+          alt=""
+          className="w-6 absolute right-8 top-14"
+        />
         <img
           src="http://localhost:3000/logo-2.svg"
           alt=""

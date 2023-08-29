@@ -6,6 +6,7 @@ import { WhoWeAre } from "@/Components/WhoWeAre/page";
 import { Footer } from "@/Components/Footer/page";
 
 import { useState } from "react";
+import { Contact } from "@/Components/Contact/paga";
 
 export default function Home() {
   const [language, setLanguage] = useState("PT");
@@ -27,6 +28,7 @@ export default function Home() {
       <WhoWeAre language={language} />
       <Spacer />
       <Posts />
+      <Contact />
       <Footer language={language} />
     </main>
   );
