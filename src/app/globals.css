@@ -32,6 +32,8 @@ h3 {
   font-family: var(--font-lato-bold);
 }
 
+// carrousel
+
 @media (prefers-color-scheme: dark) {
   :root {
   }

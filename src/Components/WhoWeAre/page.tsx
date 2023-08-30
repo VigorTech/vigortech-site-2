@@ -18,7 +18,7 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
   ];
 
   return (
-    <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16 relative">
+    <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16 relative ">
       <img
         src={"http://localhost:3000/elipse_1.svg"}
         className="absolute left-[-10%] w-20 select-none max-md:w-14"

@@ -10,7 +10,7 @@ type Props = {
 };
 const CarouselControls = (props: Props) => {
   return (
-    <div className="flex justify-between  mx-auto top-[45%] left-[-6%] w-[110%] absolute">
+    <div className="flex justify-between  mx-auto top-[45%] left-[-6%] w-[110%]  absolute">
       <button
         onClick={() => {
           if (props.canScrollPrev) {

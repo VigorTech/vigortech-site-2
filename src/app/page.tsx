@@ -5,9 +5,10 @@ import { Spacer } from "@/Components/Spacer/page";
 import { WhoWeAre } from "@/Components/WhoWeAre/page";
 import { Footer } from "@/Components/Footer/page";
 import { Services } from "@/Components/Services/page";
+import { Contact } from "@/Components/Contact/page";
+import { Costumers } from "@/Components/Costumers/page";
 
 import { useState } from "react";
-import { Contact } from "@/Components/Contact/page";
 
 export default function Home() {
   const [language, setLanguage] = useState("PT");
@@ -31,6 +32,7 @@ export default function Home() {
       <Services />
       <Spacer />
       <Posts />
+      <Costumers />
       <Contact />
       <Footer language={language} />
     </main>
