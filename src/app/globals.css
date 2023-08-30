@@ -8,6 +8,30 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+p,
+a {
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-poppins-bold);
+}
+
+.text-poppins-bold {
+  font-family: var(--font-poppins-bold);
+}
+.text-poppins {
+  font-family: var(--font-poppins);
+}
+.text-lato {
+  font-family: var(--font-lato);
+}
+.text-lato-bold {
+  font-family: var(--font-lato-bold);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
   }

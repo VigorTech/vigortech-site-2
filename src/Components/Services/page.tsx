@@ -18,11 +18,11 @@ export function Services() {
                     eaque mmodi officiis quod amet dolorem fugit.
                 </h2>
             </div>
-            <div className="inline-flex content-center justify-center max-xl:flex-col w-full">
-                <ServiceCard tittle={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
-                <ServiceCard tittle={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
-                <ServiceCard tittle={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
-                <ServiceCard tittle={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
+            <div className="grid grid-cols-4 items-center content-center justify-center max-xl:grid-cols-4 w-full">
+                <ServiceCard title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
+                <ServiceCard title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
+                <ServiceCard title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
+                <ServiceCard title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"} description={"teste teste teste teste teste teste teste teste teste"}/>
             </div>
         </div>
     )

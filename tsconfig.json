@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/Login/styles.js"
+    "src/app/Login/styles.js",
+    "src/locales/index.js"
   ],
   "exclude": ["node_modules"]
 }

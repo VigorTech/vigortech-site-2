@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+import { nextui } from "@nextui-org/react";
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        bgHome: "url(http://localhost:3000/background.png)",
+        bgContact: "url(http://localhost:3000/fundo-contato.png)",
       },
       dropShadow: {
         "3xl": "0 50px 70px rgba(0, 0, 0, 0.25)",
@@ -24,5 +27,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: "class",
+  plugins: [nextui()],
 };
