@@ -1,7 +1,8 @@
 import { Header } from "./Components/Header/page";
-import { Services } from "./Components/Services/page";
+import { Contact } from "./Components/Contact/page";
 import { Spacer } from "./Components/Spacer/page";
 import { WhoWeAre } from "./Components/WhoWeAre/page";
+import { Services } from "./Components/Services/page";
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
       <WhoWeAre />
       <Spacer />
       <Services />
+      <Spacer />
+      <Contact />
     </main>
   );
 }
