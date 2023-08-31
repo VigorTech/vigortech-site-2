@@ -5,6 +5,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 type Props = {
   canScrollPrev: boolean;
   canScrollNext: boolean;
+  visibleButton: boolean;
   onPrev(): void;
   onNext(): void;
 };
@@ -12,9 +13,10 @@ const CarouselControls = (props: Props) => {
   return (
     <div className="flex justify-between  mx-auto top-[45%] left-[-6%] w-[110%]  absolute">
       <button
+        className={classNames({"hidden": !props.visibleButton})}
         onClick={() => {
+          props.onPrev();
           if (props.canScrollPrev) {
-            props.onPrev();
           }
         }}
         disabled={!props.canScrollPrev}
@@ -25,11 +27,7 @@ const CarouselControls = (props: Props) => {
         />
       </button>
       <button
-        onClick={() => {
-          if (props.canScrollNext) {
-            props.onNext();
-          }
-        }}
+      className={classNames({"hidden": !props.visibleButton})}
         disabled={!props.canScrollNext}
       >
         <BsChevronRight

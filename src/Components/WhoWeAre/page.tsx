@@ -74,7 +74,7 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
           className="absolute left-[100%] w-12 top-[97%] select-none max-md:w-8"
         />
       </div>
-      <Carousel loop={true} align={"end"}>
+      <Carousel visibleButtonControl={true} loop={true} align={"end"} visibleDots={false}>
         {images.map((src, i) => {
           return (
             // 👇 style each individual slide.

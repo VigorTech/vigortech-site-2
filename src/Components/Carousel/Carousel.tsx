@@ -6,9 +6,12 @@ import Dots from "./Dots";
 import React from "react";
 
 // Define the props
-type Props = PropsWithChildren & EmblaOptionsType;
+type Props = PropsWithChildren & EmblaOptionsType & {
+  visibleDots: boolean;
+  visibleButtonControl: boolean;
+};
 
-const Carousel = ({ children, ...options }: Props) => {
+const Carousel = ({ children,  visibleButtonControl = true, visibleDots = false, ...options }: Props) => {
   // 1. useEmblaCarousel returns a emblaRef and we must attach the ref to a container.
   // EmblaCarousel will use that ref as basis for swipe and other functionality.
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
@@ -43,12 +46,13 @@ const Carousel = ({ children, ...options }: Props) => {
         <div className="flex">{children}</div>
       </div>
       <CarouselControls
+        visibleButton={visibleButtonControl}
         canScrollNext={canScrollNext}
         canScrollPrev={canScrollPrev}
         onNext={() => emblaApi?.scrollNext()}
         onPrev={() => emblaApi?.scrollPrev()}
       />
-      <Dots itemsLength={length} selectedIndex={selectedIndex} />
+      <Dots itemsLength={length} selectedIndex={selectedIndex} visible={visibleDots} />
     </div>
   );
 };
