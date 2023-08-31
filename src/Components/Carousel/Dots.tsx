@@ -14,11 +14,11 @@ const Dots = ({ itemsLength, selectedIndex, visible }: Props) => {
         return (
           <div
             className={classNames({
-              "h-1 w-1  rounded-full transition-all duration-300 bg-slate-50":
+              "h-1 w-1 mx-1  rounded-full transition-all duration-300 bg-slate-50":
                 true,
               // tune down the opacity if slide is not selected
               "opacity-50": !selected,
-              "scale-[2.5]": selected,
+              "scale-[3]": selected,
               "hidden": !visible,
             })}
             key={index}
