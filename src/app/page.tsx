@@ -9,6 +9,7 @@ import { Contact } from "@/Components/Contact/page";
 import { Costumers } from "@/Components/Costumers/page";
 
 import { useState } from "react";
+import { Techs } from "@/Components/Techs/page";
 
 export default function Home() {
   const [language, setLanguage] = useState("PT");
@@ -31,9 +32,13 @@ export default function Home() {
       <Spacer />
       <Services />
       <Spacer />
+      <Techs/>
+      <Spacer />
       <Posts />
+      <Spacer />
       <Costumers />
       <Contact />
+      <Spacer />
       <Footer language={language} />
     </main>
   );

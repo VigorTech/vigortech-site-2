@@ -15,7 +15,7 @@ export function Costumers() {
   return (
     <div
       id="costumer-container"
-      className="bg-bgCostumers bg-contain h-[30rem] flex justify-center py-8"
+      className="bg-bgCostumers bg-contain h-[30rem] flex justify-center py-8 max-sm:h-[32rem]"
     >
       <div id="text-container" className="flex flex-col items-center pt-9">
         <h1 className="text-white text-5xl letter text-md text-poppins-bold ">
