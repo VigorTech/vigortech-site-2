@@ -17,9 +17,9 @@ function Lang({ language, id }) {
   if (language === `EN`) chosenLanguage = `inglês`;
   if (language === `ES`) chosenLanguage = `espanhol`;
 
-  console.log(
-    `O Elemento de id "${id}" teve a linguagem do conteúdo alterada para ${chosenLanguage}`
-  );
+  // console.log(
+  //   `O Elemento de id "${id}" teve a linguagem do conteúdo alterada para ${chosenLanguage}`
+  // );
 
   return <>{data[language][id]}</>;
 }

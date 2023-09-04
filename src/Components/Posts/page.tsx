@@ -4,7 +4,7 @@ import { PostCard } from "./PostsCard/page";
 export function Posts() {
   return (
     <div className="mx-auto w-full py-9 ">
-      <h1 id="title" className="text-title text-5xl pb-9 text-center">
+      <h1 id="title" className="text-title text-5xl pb-9 pt-11 text-center">
         POSTS LINKEDIN
       </h1>
       <div className="mx-auto grid  grid-cols-2 w-5/6 max-lg:grid-cols-1">

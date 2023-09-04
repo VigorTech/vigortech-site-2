@@ -13,7 +13,7 @@ const CarouselControls = (props: Props) => {
   return (
     <div className="flex justify-between  mx-auto top-[45%] left-[-6%] w-[110%]  absolute">
       <button
-        className={classNames({"hidden": !props.visibleButton})}
+        className={classNames({ hidden: !props.visibleButton })}
         onClick={() => {
           props.onPrev();
           if (props.canScrollPrev) {
@@ -27,8 +27,13 @@ const CarouselControls = (props: Props) => {
         />
       </button>
       <button
-      className={classNames({"hidden": !props.visibleButton})}
-        disabled={!props.canScrollNext}
+        className={classNames({ hidden: !props.visibleButton })}
+        onClick={() => {
+          props.onNext();
+          if (props.canScrollPrev) {
+          }
+        }}
+        disabled={!props.canScrollPrev}
       >
         <BsChevronRight
           color={props.canScrollPrev ? "04D6B2" : "gray"}

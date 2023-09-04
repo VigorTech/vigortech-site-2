@@ -13,7 +13,7 @@ export function Techs() {
   return (
     <div
       id="costumer-container"
-      className="bg-bgCostumers bg-contain h-[20%] flex justify-center max-sm:h-[32rem] overflow-hidden"
+      className="bg-bgCostumers bg-contain h-[30%] flex justify-center max-sm:h-[32rem] "
     >
       <div id="text-container" className="flex flex-col items-center pt-9">
         <h1 className="text-white text-5xl letter text-md text-poppins-bold pt-9">
