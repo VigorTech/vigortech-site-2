@@ -13,7 +13,7 @@ export function Techs() {
   return (
     <div
       id="costumer-container"
-      className="bg-bgCostumers bg-contain h-[30%] flex justify-center max-sm:h-[32rem] "
+      className="bg-bgCostumers bg-contain h-[30%] flex justify-center max-sm:h-[52rem] "
     >
       <div id="text-container" className="flex flex-col items-center pt-9">
         <h1 className="text-white text-5xl letter text-md text-poppins-bold pt-9">
@@ -32,15 +32,10 @@ export function Techs() {
           >
             {images.map((src, i) => {
               return (
-                // 👇 style each individual slide.wq2
-                // flex[0_0_100%]
-                //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
-                //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
                 <div
                   className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
                   key={i}
                 >
-                  {/* use object-cover + fill since we don't know the height and width of the parent */}
                   <Image
                     src={src}
                     fill

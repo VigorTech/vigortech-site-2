@@ -51,7 +51,7 @@ export function Footer({ language }: FooterProps) {
               ["http://localhost:3000/icon-linkedln.svg", "#"],
               ["http://localhost:3000/icon-youtube.svg", "#"],
             ].map(([src, link]) => (
-              <a href={link}>
+              <a href={link} key={link}>
                 <img src={src} alt="" />
               </a>
             ))}

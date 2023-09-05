@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Carousel from "../Carousel/Carousel";
 
-
-
 export function Costumers() {
   const images = [
     "http://localhost:3000/logo-branca.png",
@@ -26,7 +24,12 @@ export function Costumers() {
           requesting them to follow him, led the way to an adjoining hall.
         </p>
         <div className="w-[100vw]">
-            <Carousel visibleButtonControl={false} loop={true} align={"end"} visibleDots={true}>
+          <Carousel
+            visibleButtonControl={false}
+            loop={true}
+            align={"end"}
+            visibleDots={true}
+          >
             {images.map((src, i) => {
               return (
                 // 👇 style each individual slide.wq2
@@ -38,12 +41,18 @@ export function Costumers() {
                   key={i}
                 >
                   {/* use object-cover + fill since we don't know the height and width of the parent */}
-                  <Image src={src} fill className="object-contain px-4" alt="alt" />
+                  <Image
+                    src={src}
+                    key={i}
+                    fill
+                    className="object-contain px-4"
+                    alt="alt"
+                  />
                 </div>
               );
             })}
           </Carousel>
-          </div>
+        </div>
       </div>
     </div>
   );
