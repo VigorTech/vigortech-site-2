@@ -16,7 +16,7 @@ export function Services() {
           mmodi officiis quod amet dolorem fugit.
         </h2>
       </div>
-      <div className="grid grid-cols-4 items-center content-center justify-center max-xl:grid-cols-4 w-full">
+      <div className="grid grid-cols-4 gap-8 max-sm:grid-cols-1 max-xl:grid-cols-2 w-full">
         <ServiceCard
           title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"}
           description={"teste teste teste teste teste teste teste teste teste"}
