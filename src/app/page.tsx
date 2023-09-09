@@ -32,7 +32,7 @@ export default function Home() {
       <Spacer />
       <Services />
       <Spacer />
-      <Techs/>
+      <Techs />
       <Spacer />
       <Posts />
       <Spacer />

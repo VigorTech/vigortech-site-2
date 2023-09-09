@@ -2,7 +2,12 @@ import { ServiceCard } from "./ServiceCard/page";
 
 export function Services() {
   return (
-    <div className="w-5/6 justify-center mx-auto mt-16">
+    <div className="w-5/6 relative justify-center mx-auto my-16">
+      <img
+        src="http://localhost:3000/elipse_2.svg"
+        alt=""
+        className="w-12 absolute left-[-5%] top-[50%] max-xl:w-0"
+      />
       <div>
         <h1
           id="title"
@@ -32,6 +37,11 @@ export function Services() {
         <ServiceCard
           title={"SERVIÇO descrito aqui SERVIÇO descrito aqui"}
           description={"teste teste teste teste teste teste teste teste teste"}
+        />
+        <img
+          src="http://localhost:3000/elipse_3.svg"
+          alt=""
+          className="w-6 absolute right-[35%] bottom-[-19%] max-xl:bottom-[-10%] max-sm:-bottom-[5.5%]"
         />
       </div>
     </div>
