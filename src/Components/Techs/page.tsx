@@ -47,7 +47,12 @@ export function Techs() {
             })}
           </Carousel>
         </div>
-        <video className="w-full h-[33rem] object-fill mt-9" muted autoPlay>
+        <video
+          className="w-full h-[33rem] object-fill mt-9"
+          muted
+          autoPlay
+          loop={true}
+        >
           <source src="http://localhost:3000/template.mp4" type="video/mp4" />
         </video>
       </div>
