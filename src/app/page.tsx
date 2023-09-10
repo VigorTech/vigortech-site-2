@@ -7,9 +7,9 @@ import { Footer } from "@/Components/Footer/page";
 import { Services } from "@/Components/Services/page";
 import { Contact } from "@/Components/Contact/page";
 import { Costumers } from "@/Components/Costumers/page";
+import { Techs } from "@/Components/Techs/page";
 
 import { useState } from "react";
-import { Techs } from "@/Components/Techs/page";
 
 export default function Home() {
   const [language, setLanguage] = useState("PT");
