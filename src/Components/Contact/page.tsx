@@ -1,3 +1,5 @@
+import EmailForm from "./EmailForm/page.";
+
 export function Contact() {
   return (
     <>
@@ -14,6 +16,7 @@ export function Contact() {
             requesting them to follow him, led the way to an adjoining hall. It
             was evidently a court-room.
           </p>
+          <EmailForm/>
         </div>
       </div>
     </>
