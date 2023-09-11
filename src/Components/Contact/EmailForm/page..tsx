@@ -109,6 +109,7 @@ function EmailForm() {
     return (
         <form onSubmit={formik.handleSubmit}>
             <div className="grid grid-cols-2 w-[747px] h-[414px] gap-x-7 gap-y-5 py-8">
+                <div className='w-full col-span-2'>
                 <input
                     className="bg-[#E8E8E8] rounded w-full col-span-2 h-16 pl-8 placeholder:text-text placeholder:text-lg"
                     type="text"
@@ -118,14 +119,9 @@ function EmailForm() {
                 {formik.touched.name && formik.errors.name ? (
                     <div className="text-red-500">{formik.errors.name}</div>
                 ) : null}
+                </div>
 
-                <input
-                    className="bg-[#E8E8E8] rounded w-full h-16 pl-8 placeholder:text-text placeholder:text-lg"
-                    type="text"
-                    placeholder="Telefone"
-                    {...formik.getFieldProps('telephone')}
-                />
-
+                <div className='w-full'>
                 <input
                     className="bg-[#E8E8E8] rounded w-full h-16 pl-8 placeholder:text-text placeholder:text-lg"
                     type="text"
@@ -135,7 +131,19 @@ function EmailForm() {
                 {formik.touched.email && formik.errors.email ? (
                     <div className="text-red-500">{formik.errors.email}</div>
                 ) : null}
+                </div>
 
+
+                <div className='w-full'>
+                <input
+                    className="bg-[#E8E8E8] rounded w-full h-16 pl-8 placeholder:text-text placeholder:text-lg"
+                    type="text"
+                    placeholder="Telefone"
+                    {...formik.getFieldProps('telephone')}
+                />
+                </div>
+                
+                <div className='w-full col-span-2'>
                 <textarea
                     className="bg-[#E8E8E8] rounded w-full col-span-2 resize-none h-32 px-8 pt-5 placeholder:text-text placeholder:text-lg"
                     placeholder="Mensagem"
@@ -144,6 +152,7 @@ function EmailForm() {
                 {formik.touched.message && formik.errors.message ? (
                     <div className="text-red-500">{formik.errors.message}</div>
                 ) : null}
+                </div>
                 <button
                     className="bg-[#04D6B2] rounded w-full col-span-2 h-16"
                     type="submit"
