@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost"],
+    domains: ["localhost, vigortech-hml.netlify.app"],
   },
   i18n: {
     locales: ["br", "es"],
