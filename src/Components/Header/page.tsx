@@ -77,7 +77,7 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
             onSelectionChange={handleLanguageChange}
           >
             <DropdownItem key="PT">PT</DropdownItem>
-            <DropdownItem key="EN">EN</DropdownItem>
+            <DropdownItem key="EN">ENs</DropdownItem>
             <DropdownItem key="ES">ES</DropdownItem>
           </DropdownMenu>
         </Dropdown>
