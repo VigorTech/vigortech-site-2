@@ -11,20 +11,9 @@ export function Costumers() {
     "/logo-branca.png",
   ];
 
-  const imageSlides = images.map((src, i) => (
-    <div
-      className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
-      key={i}
-    >
-      <Image
-        src="/logo-branca.png"
-        key={i}
-        fill
-        className="object-contain px-4"
-        alt={src}
-      />
-    </div>
-  ));
+  // const imageSlides = images.map((src, i) => (
+
+  // ));
 
   return (
     <div
@@ -46,7 +35,38 @@ export function Costumers() {
             align={"end"}
             visibleDots={true}
           >
-            {imageSlides}
+            <div className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
+              <Image
+                src="/logo-branca.png"
+                fill
+                className="object-contain px-4"
+                alt={"/logo-branca.png"}
+              />
+            </div>
+            <div className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
+              <Image
+                src="/logo-branca.png"
+                fill
+                className="object-contain px-4"
+                alt={"/logo-branca.png"}
+              />
+            </div>
+            <div className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
+              <Image
+                src="/logo-branca.png"
+                fill
+                className="object-contain px-4"
+                alt={"/logo-branca.png"}
+              />
+            </div>
+            <div className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
+              <Image
+                src="/logo-branca.png"
+                fill
+                className="object-contain px-4"
+                alt={"/logo-branca.png"}
+              />
+            </div>
           </Carousel>
         </div>
       </div>
