@@ -6,6 +6,7 @@ import {
   DropdownItem,
 } from "@nextui-org/react";
 import { SlOptionsVertical } from "react-icons/sl";
+import { Selection } from "@react-types/shared";
 
 import { useState, useMemo } from "react";
 import Lang from "../../locales";
@@ -23,10 +24,20 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
     [selectedKeys]
   );
 
-  const handleLanguageChange = (keys: Selection) => {
-    console.log(keys);
-    setSelectedKeys(new Set(keys));
-    onChangeLanguage(keys.currentKey); // Assuming only single selection is allowed
+  const handleLanguageChange = (keys: Selection | string) => {
+    if (typeof keys === "string") {
+      // Handle the case when a string is directly passed
+      const newSelectedKeys = new Set<string>([keys]);
+      setSelectedKeys(newSelectedKeys);
+      onChangeLanguage(keys);
+    } else {
+      // Handle the case when Selection is passed
+      const keyArray = Array.from(keys);
+      const selectedKey = keyArray[0] as string; // Assuming first key is desired
+      const newSelectedKeys = new Set<string>([selectedKey]);
+      setSelectedKeys(newSelectedKeys);
+      onChangeLanguage(selectedKey);
+    }
   };
 
   return (
