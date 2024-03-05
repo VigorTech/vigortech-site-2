@@ -16,7 +16,13 @@ export function Costumers() {
       className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
       key={i}
     >
-      <Image src={src} key={i} fill className="object-contain px-4" alt={src} />
+      <Image
+        src="/logo-branca.png"
+        key={i}
+        fill
+        className="object-contain px-4"
+        alt={src}
+      />
     </div>
   ));
 
