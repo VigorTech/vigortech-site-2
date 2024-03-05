@@ -42,11 +42,7 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
 
   return (
     <nav className="flex items-center justify-around mt-6 absolute w-full ">
-      <img
-        src="/logo.svg"
-        alt=""
-        className="w-96 max-xl:w-52"
-      />
+      <img src="/logo.svg" alt="" className="w-96 max-xl:w-52" />
       <div className="flex items-center mt-8 space-x-8 max-xl:hidden">
         {[
           ["contact", "/home"],
@@ -80,7 +76,7 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
             selectedKeys={selectedKeys}
             onSelectionChange={handleLanguageChange}
           >
-            <DropdownItem key="PT">PT</DropdownItem>
+            <DropdownItem key="PT">PTS</DropdownItem>
             <DropdownItem key="EN">EN</DropdownItem>
             <DropdownItem key="ES">ES</DropdownItem>
           </DropdownMenu>
@@ -90,11 +86,7 @@ export function Header({ language, onChangeLanguage }: HeaderProps) {
           <img src="/brasil.png" alt="" className="w-10" />
         )}
         {selectedValue.includes("EN") && (
-          <img
-            src="/estados-unidos.png"
-            alt=""
-            className="w-8"
-          />
+          <img src="/estados-unidos.png" alt="" className="w-8" />
         )}
         {selectedValue.includes("ES") && (
           <img src="/espanha.png" alt="" className="w-8" />
