@@ -8,7 +8,7 @@ export function Posts() {
         POSTS LINKEDIN
       </h1>
       <img
-        src={"http://localhost:3000/elipse_4.svg"}
+        src={"/elipse_4.svg"}
         className="absolute right-0 w-20 select-none max-md:w-14"
       />
       <div className="mx-auto  grid  grid-cols-2 w-5/6 max-lg:grid-cols-1">
@@ -42,7 +42,7 @@ export function Posts() {
         </div>
       </div>
       <img
-        src={"http://localhost:3000/elipse_2.svg"}
+        src={"/elipse_2.svg"}
         className="absolute  w-12 left-[5%] bottom-[-6.5%] select-none max-md:hidden"
       />
     </div>

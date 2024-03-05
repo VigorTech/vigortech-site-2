@@ -3,12 +3,12 @@ import Carousel from "../Carousel/Carousel";
 
 export function Costumers() {
   const images = [
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
   ];
   return (
     <div

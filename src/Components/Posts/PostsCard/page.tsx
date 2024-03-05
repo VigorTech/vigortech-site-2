@@ -7,7 +7,7 @@ export function PostCard({ title, subtitle }: PostCardProps) {
   return (
     <div id="containers" className="cursor-pointer">
       <img
-        src="http://localhost:3000/background.png"
+        src="/background.png"
         alt=""
         className="w-[100%] h-[18rem] rounded-md drop-shadow-[5px_5px_15px_rgba(0,0,0,0.25)]"
       />

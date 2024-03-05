@@ -9,22 +9,22 @@ interface WhoWeAreProps {
 
 export function WhoWeAre({ language }: WhoWeAreProps) {
   const images = [
-    "http://localhost:3000/background.png",
-    "http://localhost:3000/background.png",
-    "http://localhost:3000/background.png",
-    "http://localhost:3000/background.png",
-    "http://localhost:3000/background.png",
-    "http://localhost:3000/background.png",
+    "/background.png",
+    "/background.png",
+    "/background.png",
+    "/background.png",
+    "/background.png",
+    "/background.png",
   ];
 
   return (
     <div id="WhoWeAre" className="w-5/6 justify-center mx-auto mt-16 relative ">
       <img
-        src={"http://localhost:3000/elipse_1.svg"}
+        src={"/elipse_1.svg"}
         className="absolute left-[-10%] w-20 select-none max-md:w-14"
       />
       <img
-        src={"http://localhost:3000/elipse_2.svg"}
+        src={"/elipse_2.svg"}
         className="absolute left-[-7.5%] w-12 top-[30%] select-none max-md:hidden"
       />
       <h1
@@ -70,7 +70,7 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
           </p>
         </div>
         <img
-          src={"http://localhost:3000/elipse_2.svg"}
+          src={"/elipse_2.svg"}
           className="absolute left-[100%] w-12 top-[97%] select-none max-md:w-8"
         />
       </div>

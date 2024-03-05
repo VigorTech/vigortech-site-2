@@ -13,7 +13,7 @@ export function PostCardFull({
     <div>
       <div id="container" className="w-full cursor-pointer">
         <img
-          src="http://localhost:3000/background.png"
+          src="/background.png"
           alt=""
           className="w-[95%] h-[28rem] max-lg:w-[100%] max-lg:h-[30rem] max-sm:h-[18rem] object-fill rounded-md drop-shadow-[5px_5px_15px_rgba(0,0,0,0.25)]"
         />

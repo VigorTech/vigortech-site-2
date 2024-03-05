@@ -3,12 +3,12 @@ import Carousel from "../Carousel/Carousel";
 
 export function Techs() {
   const images = [
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
-    "http://localhost:3000/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
+    "/logo-branca.png",
   ];
   return (
     <div
@@ -53,7 +53,7 @@ export function Techs() {
           autoPlay
           loop={true}
         >
-          <source src="http://localhost:3000/template.mp4" type="video/mp4" />
+          <source src="/template.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

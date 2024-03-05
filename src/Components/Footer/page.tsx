@@ -13,12 +13,12 @@ export function Footer({ language }: FooterProps) {
         className="bg-[#1A2E35] w-1/3 h-52 flex justify-center py-7 max-xl:hidden relative"
       >
         <img
-          src="http://localhost:3000/elipse_3.svg"
+          src="/elipse_3.svg"
           alt=""
           className="w-6 absolute right-8 top-14"
         />
         <img
-          src="http://localhost:3000/logo-2.svg"
+          src="/logo-2.svg"
           alt=""
           className="w-48 pb-7"
         />
@@ -46,10 +46,10 @@ export function Footer({ language }: FooterProps) {
             className="flex pl-24 space-x-5 max-lg:pl-0 max-lg:pt-4 items-center"
           >
             {[
-              ["http://localhost:3000/icon-facebook.svg", "#"],
-              ["http://localhost:3000/icon-instagram.svg", "#"],
-              ["http://localhost:3000/icon-linkedln.svg", "#"],
-              ["http://localhost:3000/icon-youtube.svg", "#"],
+              ["/icon-facebook.svg", "#"],
+              ["/icon-instagram.svg", "#"],
+              ["/icon-linkedln.svg", "#"],
+              ["/icon-youtube.svg", "#"],
             ].map(([src, link]) => (
               <a href={link} key={link}>
                 <img src={src} alt="" />

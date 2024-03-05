@@ -22,7 +22,7 @@ export default function Home() {
           className="bg-black w-1/3 h-64 absolute left-1/3 top-1/3 shadow-lg shadow-black drop-shadow-3xl rounded-lg "
         ></div> */}
         <img
-          src="http://localhost:3000/background.png"
+          src="/background.png"
           alt=""
           className="h-screen w-screen"
         />
