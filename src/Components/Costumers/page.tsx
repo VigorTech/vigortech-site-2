@@ -11,6 +11,20 @@ export function Costumers() {
     "/logo-branca.png",
   ];
 
+  const mapImages = (src, index) => (
+    <div
+      className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
+      key={index}
+    >
+      <Image
+        src={src}
+        layout="fill"
+        objectFit="contain"
+        alt={`Logo ${index}`}
+      />
+    </div>
+  );
+
   return (
     <div
       id="costumer-container"
@@ -31,19 +45,7 @@ export function Costumers() {
             align={"end"}
             visibleDots={true}
           >
-            {images.map((src, i) => (
-              <div
-                className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
-                key={i}
-              >
-                <Image
-                  src={src}
-                  layout="fill"
-                  objectFit="contain"
-                  alt={`Logo ${i}`}
-                />
-              </div>
-            ))}
+            {images.map(mapImages)}
           </Carousel>
         </div>
       </div>
