@@ -73,23 +73,38 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
         />
       </div>
       <div className="flex mx-auto">
-        {images.map((src, i) => {
-          return (
-            // 👇 style each individual slide.
-            // relative - needed since we use the fill prop from next/image component
-            // h-64 - arbitrary height
-            // flex[0_0_100%]
-            //   - shorthand for flex-grow:0; flex-shrink:0; flex-basis:100%
-            //   - we want this slide to not be able to grow or shrink and take up 100% width of the viewport.
-            <div
-              className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
-              key={i}
-            >
-              {/* use object-cover + fill since we don't know the height and width of the parent */}
-              <Image src={src} fill className="object-contain px-4" alt="alt" />
-            </div>
-          );
-        })}
+        // 👇 style each individual slide. // relative - needed since we use the
+        fill prop from next/image component // h-64 - arbitrary height //
+        flex[0_0_100%] // - shorthand for flex-grow:0; flex-shrink:0;
+        flex-basis:100% // - we want this slide to not be able to grow or shrink
+        and take up 100% width of the viewport.
+        <div className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
+          {/* use object-cover + fill since we don't know the height and width of the parent */}
+          <Image
+            src={"/background.png"}
+            fill
+            className="object-contain px-4"
+            alt="alt"
+          />
+          <Image
+            src={"/background.png"}
+            fill
+            className="object-contain px-4"
+            alt="alt"
+          />
+          <Image
+            src={"/background.png"}
+            fill
+            className="object-contain px-4"
+            alt="alt"
+          />
+          <Image
+            src={"/background.png"}
+            fill
+            className="object-contain px-4"
+            alt="alt"
+          />
+        </div>
       </div>
       {/* <Carousel
         visibleButtonControl={true}
