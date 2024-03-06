@@ -80,38 +80,34 @@ export function WhoWeAre({ language }: WhoWeAreProps) {
         and take up 100% width of the viewport. */}
         <div className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
           {/* use object-cover + fill since we don't know the height and width of the parent */}
-          <Image
+          <img
             src="/background.png"
-            fill
             className="object-contain px-4"
-            alt="alt1"
+            alt="alt2"
           />
         </div>
         <div className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
           {/* use object-cover + fill since we don't know the height and width of the parent */}
-          <Image
+          <img
             src="/background.png"
-            fill
             className="object-contain px-4"
-            alt="alt1"
+            alt="alt2"
           />
         </div>
         <div className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
           {/* use object-cover + fill since we don't know the height and width of the parent */}
-          <Image
+          <img
             src="/background.png"
-            fill
             className="object-contain px-4"
-            alt="alt1"
+            alt="alt2"
           />
         </div>
         <div className="relative h-56 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]">
           {/* use object-cover + fill since we don't know the height and width of the parent */}
-          <Image
+          <img
             src="/background.png"
-            fill
             className="object-contain px-4"
-            alt="alt1"
+            alt="alt2"
           />
         </div>
       </div>
