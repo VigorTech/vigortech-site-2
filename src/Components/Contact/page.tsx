@@ -3,10 +3,13 @@ import EmailForm from "./EmailForm/page.";
 export function Contact() {
   return (
     <>
-      <div id="container" className="bg-bgContact bg-contain h-[100vh]">
+      <div
+        id="container"
+        className="bg-bgContact bg-contain h-[55rem] max-xl:h-[70rem]"
+      >
         <div
           id="form"
-          className="flex flex-col items-center  w-full pt-20 h-[100vh]"
+          className="flex flex-col items-center  w-full pt-20 h-[100vh]  "
         >
           <h1 className="text-[#1A2E35] text-6xl tracking-[3.5px] pt-6 text-md text-lato-bold">
             CONTATO
@@ -16,7 +19,7 @@ export function Contact() {
             requesting them to follow him, led the way to an adjoining hall. It
             was evidently a court-room.
           </p>
-          <EmailForm/>
+          <EmailForm />
         </div>
       </div>
     </>

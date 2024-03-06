@@ -23,29 +23,24 @@ export function Techs() {
           At half-past eight the door opened, the policeman appeared, and,
           requesting them to follow him, led the way to an adjoining hall.
         </p>
-        <div className="flex w-[100vw]">
-          {/* <Carousel
+        <div className="ml-20 w-[100vw]">
+          <Carousel
             visibleButtonControl={false}
             loop={true}
             align={"end"}
             visibleDots={true}
           >
-          </Carousel> */}
-          {images.map((src, i) => {
-            return (
-              <div
-                className="relative h-16 my-12 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
-                key={i}
-              >
-                <Image
-                  src={src}
-                  fill
-                  className="object-contain px-4"
-                  alt="alt"
-                />
-              </div>
-            );
-          })}
+            {images.map((src, i) => {
+              return (
+                <div
+                  className="relative h-16 my-14 flex-[0_0_25%] max-xl:flex-[0_0_50%] max-[1350px]:flex-[0_0_35%] max-lg:flex-[0_0_100%]"
+                  key={i}
+                >
+                  <img src={src} className="object-contain px-4" alt="alt" />
+                </div>
+              );
+            })}
+          </Carousel>
         </div>
         <video
           className="w-full h-[33rem] object-fill mt-9"

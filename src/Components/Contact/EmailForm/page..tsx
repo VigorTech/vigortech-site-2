@@ -109,7 +109,7 @@ function EmailForm() {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <div className="grid grid-cols-2 w-[747px] h-[414px] gap-x-7 gap-y-5 py-8">
+      <div className="grid grid-cols-2 w-[40rem] h-[30rem] gap-x-7 gap-y-5 py-8  max-xl:w-[30rem]  max-xl:h-[30rem]  px-10">
         <div className="w-full col-span-2">
           <input
             className="bg-[#E8E8E8] rounded w-full col-span-2 h-16 pl-8 placeholder:text-text placeholder:text-lg"
